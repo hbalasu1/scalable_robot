@@ -9,6 +9,7 @@ from imutils.perspective import four_point_transform
 import imutils
 
 camera = cv2.VideoWriter(0)
+#camera = cv2.VideoCapture('rtsp://192.168.0.125:8554/mjpeg/1')
 
 def findTrafficSign():
     '''
