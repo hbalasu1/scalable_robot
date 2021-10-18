@@ -8,9 +8,9 @@ import time
 from imutils.perspective import four_point_transform
 import imutils
 
-camera = cv2.VideoCapture(0)
 #camera = cv2.VideoWriter(0)
-#camera = cv2.VideoCapture('rtsp://192.168.0.125:8554/mjpeg/1')
+#camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture('rtsp://192.168.0.125:8554/mjpeg/1')
 
 def findTrafficSign():
     '''
@@ -68,6 +68,12 @@ def findTrafficSign():
 
             # write the description of the sign on the original image
             cv2.putText(frame, detectedTrafficSign, tuple(largestRect[0]), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0, 255, 0), 2)
+            print(detectedTrafficSign) 
+            #Print out the results
+            #Turn Left
+            #Turn Right
+            #Move Straight
+            #Turn Back 
 
         # show original image
         cv2.imshow("Video Input", frame)
@@ -120,7 +126,7 @@ def identifyTrafficSign(image):
     segments = (leftFraction, centerFraction, rightFraction, topFraction)
     segments = tuple(1 if segment > THRESHOLD else 0 for segment in segments)
 
-    cv2.imshow("Warped", image)
+    #cv2.imshow("Warped", image)
 
     if segments in SIGNS_LOOKUP:
         return SIGNS_LOOKUP[segments]
