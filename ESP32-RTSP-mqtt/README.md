@@ -1,4 +1,4 @@
-# ESP32-CAM RTSP stream
+# ESP32-CAM Arduino MQTT Project for IMIMOD
 
 This repository is for the [Circuitrocks@Learn](https://learn.circuit.rocks/?p=2245) blog how to stream a video from the ESP32-CAM to a RTSP client or web browser.
 
