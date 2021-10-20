@@ -1,0 +1,4 @@
+For PubSub MQTT library to work, exit Arduino IDE Application
+Unzip PubSubClient-Master.zip to PubSubClient
+Copy the PubSubClient folder to c:\Users\...\Documents\Arduino\libraries\ folder. 
+Start Arduino IDE and compile project/src 
