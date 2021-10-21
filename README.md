@@ -8,9 +8,11 @@ To test the broker, you could run this command to see if the GPIO can be toggled
 
 **Manual MQTT Publish Command:**
 
-Type 'mosquitto_pub -h localhost -t inTopic -m "0"' to toggle GPIOs for Robot to go straight
+Type '**mosquitto_pub -h localhost -t inTopic -m "0"**' to toggle GPIOs for Robot to go straight
+
 or
-Type 'mosquitto_pub -h localhost -t inTopic -m "1"' to toggle GPIOs for Robot to turn left. 
+Type '**mosquitto_pub -h localhost -t inTopic -m "1"**' to toggle GPIOs for Robot to turn left. 
+
 
 for **Python MQTT to work**, please install paho-mqtt with the command below. 
 sudo apt-get install python3-paho-mqtt
