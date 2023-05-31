@@ -1,22 +1,111 @@
 name: Bug Report
-description: File a bug report
+about: Create a report to help us improve
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["bug", "support_request"]
 assignees:
   - octocat
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
+        Please provide all the necessary information to expedite the response.
+        #Start here
+  - type: dropdown
+    id: ov_source
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: OpenVINO Source
+      description: OpenVINO distribution that you download
+      options:
+        - OpenVINO Archives
+        - PIP install 
+        - Github Source 
+        - Docker 
+    validations:
+      required: true
+  - type: input
+    id: ov_version
+    attributes:
+      label: OpenVINO Version 
+      description: OpenVINO Version / Branch / tag
+      placeholder: 2022.3.0 / Master Branch / tag 2022.3.0
     validations:
       required: false
+   - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      description: Operating System 
+      options:
+        - Ubuntu 18.04 (LTS)
+        - Ubuntu 20.04 (LTS)
+        - Windows 10
+        - Windows 11
+        - Red Hat Enterprise Linux 8
+        - macOS 10.15
+        - macOS 11
+        - macOS 12
+        - Other (Please specify in description)
+    validations:
+      required: true
+  - type: dropdown
+    id: compiler
+    attributes:
+      label: Compiler (if applicable)
+      description: Compiler that use to compile OpenVINO 
+      options:
+        - Visual Studio 
+        - CMAKE
+        - NILL
+    validations:
+      required: false
+  - type: dropdown
+    id: problem_classification
+    attributes:
+      label: Problem Classification
+      description: Choose the list of issue classification
+      options:
+        - Modal Optimization (mo)
+        - Accuracy 
+        - TensorFlow FE
+        - Other (Please specify in description)
+    validations:
+      required: true
+  - type: dropdown
+    id: device_use
+    attributes:
+      label: Device Use for Inference Engine
+      description: Device Use for Inference Engine
+      options:
+        - CPU
+        - GPU
+        - NCS2 (intel movidius)
+        - HDDL
+    validations:
+      required: true
+  - type: dropdown
+    id: framework
+    attributes:
+      label: Framework
+      description: Framework use in modal optimization
+      options:
+        - TensorFlow 1
+        - Keras (TensorFlow 2)
+        - Caffe
+        - ONNX
+        - Pytorch
+        - mxnet
+        - Paddle Paddle
+    validations:
+      required: true
+  - type: input
+    id: modal_name
+    attributes:
+      label: Modal Name  
+      description: Modal Name
+      placeholder: ResNet50 / YOLOv4
+    validations:
+      required: false
+      #Endhere 
   - type: textarea
     id: what-happened
     attributes:
