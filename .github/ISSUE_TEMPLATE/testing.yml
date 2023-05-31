@@ -30,7 +30,7 @@ body:
       placeholder: 2022.3.0 / Master Branch / tag 2022.3.0
     validations:
       required: false
-   - type: dropdown
+  - type: dropdown
     id: os
     attributes:
       label: Operating System
