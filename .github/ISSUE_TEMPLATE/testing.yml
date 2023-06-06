@@ -118,10 +118,9 @@ body:
   - type: textarea
     id: step_by_step
     attributes:
-      label: Details instruction on reproducing the issue
-      description: Details step by step
+      label: Destails Step by Step 
+      description: Details instruction on reproducing the issue
       placeholder: Please provide us Step by step on how we can reproduced the issue
-      value: "Error when perform Modal optimization on yolov4 model"
     validations:
       required: false
   - type: textarea
