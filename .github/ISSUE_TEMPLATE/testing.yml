@@ -140,5 +140,5 @@ body:
           required: true
         - label: I checked the problem with the documentation, FAQ, open issues, Stack Overflow, etc., and have not found the solution
           required: true
-        - label: There is reproducer code and related data files: images, videos, models, etc
+        - label: There is reproducer code and related data files such as images, videos, models, etc.
           required: true
