@@ -98,43 +98,32 @@ body:
     validations:
       required: true
   - type: input
-    id: modal_name
+    id: model_name
     attributes:
-      label: Modal Name  
-      description: Modal Name
+      label: Model Name  
+      description: Please provide us with the link to your model or attach .zip file in the description
       placeholder: ResNet50 / YOLOv4
     validations:
       required: false
       #Endhere 
   - type: textarea
-    id: what-happened
+    id: bug_description
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Details Description of the issue
+      description: Also tell us the issue, and what did you expect to happen?
+      placeholder: Please provide details description on what happen
+      value: "Error when perform Modal optimization on yolov4 model"
     validations:
       required: true
-  - type: dropdown
-    id: version
+  - type: textarea
+    id: step_by_step
     attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+      label: Details instruction on reproducing the issue
+      description: Details step by step
+      placeholder: Please provide us Step by step on how we can reproduced the issue
+      value: "Error when perform Modal optimization on yolov4 model"
     validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+      required: false
   - type: textarea
     id: logs
     attributes:
