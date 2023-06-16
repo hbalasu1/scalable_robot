@@ -36,18 +36,6 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: problem_classification
-    attributes:
-      label: Problem Classification
-      description: Choose the list of issue classification
-      options:
-        - Modal Optimization (mo)
-        - Accuracy 
-        - TensorFlow FE
-        - Other (Please specify in description)
-    validations:
-      required: true
-  - type: dropdown
     id: device_use
     attributes:
       label: Device Use for Inference Engine
