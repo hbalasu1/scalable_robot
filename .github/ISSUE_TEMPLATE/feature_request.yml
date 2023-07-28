@@ -23,6 +23,11 @@ body:
       value: "Recent autonomous vehicles have been using the yolov8 model to perform object segmentation."
     validations:
       required: false
+  - type: checkboxes
+    id: check2
+    attributes:
+      label: Issue submission checklist
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/intel/intel-one-mono/blob/main/CODE_OF_CONDUCT.md)
       options:
         - label: The feature request or improvement must be related to OpenVINO
           required: true
