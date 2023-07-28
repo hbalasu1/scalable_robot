@@ -1,0 +1,25 @@
+name: Feature Request
+description: Suggest an feature or improving for OpenVINO toolkit
+title: "[Feature Request]:
+labels: ["Enhancement", "support_request"]
+assignees:
+  - octocat
+body:
+  - type: textarea
+    id: request_description
+    attributes:
+      label: Request description
+      description: What is the request you would like us to improve on?
+      placeholder: Please provide a detailed description of your request
+      value: "To have OpenVINO suppport yolov8 model (with description)"
+    validations:
+      required: true
+  - type: textarea
+    id: feature_usecase
+    attributes:
+      label: Feature Use Case
+      description: What is the usecase of the feature you are proposing?
+      placeholder: Please rovide the use case where this will be useful
+      value: "recent autonomous vehicles have been using yolov8 model to perform objects segmentation"
+    validations:
+      required: false
