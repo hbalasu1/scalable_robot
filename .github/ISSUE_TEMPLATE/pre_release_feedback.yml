@@ -22,7 +22,7 @@ body:
       placeholder: any thoughts on the new feature are welcome
     validations:
       required: false
-   - type: checkboxes
+  - type: checkboxes
     id: checklist3
     attributes:
       label: Pre-release Feedback submission checklist
