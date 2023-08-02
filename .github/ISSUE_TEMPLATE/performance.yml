@@ -103,8 +103,8 @@ body:
       label: Quantized model?
       description: Is your model quantized with model optimized?
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
     validations:
       required: true
   - type: textarea
