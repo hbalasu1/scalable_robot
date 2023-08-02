@@ -2,8 +2,6 @@ name: Documentation issue Report
 description: This report is related to the documentation 
 title: "[Docs]: "
 labels: ["docs", "support_request"]
-assignees:
-  - ilya-lavrenov
 body:
   - type: markdown
     attributes:
