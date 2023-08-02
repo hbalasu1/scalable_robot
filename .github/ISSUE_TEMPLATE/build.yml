@@ -44,7 +44,15 @@ body:
     validations:
       required: false
   - type: textarea
-    id: build_script_HERE
+    id: build_description
+    attributes:
+      label: Build issue description
+      description: What issue are you facing during the build/installation?
+      placeholder: Please provide a detailed description of what happened
+    validations:
+      required: true
+  - type: textarea
+    id: build_script
     attributes:
       label: Build scrip or step-by-step to reproduce
       description: How can we reproduce your issue?
