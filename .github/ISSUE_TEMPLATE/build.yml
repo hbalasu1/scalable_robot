@@ -44,16 +44,7 @@ body:
     validations:
       required: false
   - type: textarea
-    id: build_description
-    attributes:
-      label: Build issue description
-      description: What issue are you facing during the build/installation?
-      placeholder: Please provide a detailed description of what happened
-      value: "received an error at "ERROR: The following required tools (as specified by HOSTTOOLS) appear to be unavailable in PATH" after performing step 5a"
-    validations:
-      required: false
-  - type: textarea
-    id: build_script
+    id: build_script_HERE
     attributes:
       label: Build scrip or step-by-step to reproduce
       description: How can we reproduce your issue?
