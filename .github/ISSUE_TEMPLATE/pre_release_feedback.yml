@@ -1,10 +1,16 @@
 name: Pre-release Feedback
 description: Feedback on Pre-release OpenVINO 
-title: "[Pre-Release Feedback]: "
+title: "[Pre-Release Feedback]:"
 labels: ["Pre-release", "support_request"]
-assignees:
-  - octocat
 body:
+  - type: input
+    id: pre_version
+    attributes:
+      label: Pre-release Version
+      description: What is the pre-release version you are using?
+      placeholder: 2023.0.0.dev20230427
+    validations:
+      required: true
   - type: textarea
     id: feedback
     attributes:
@@ -18,8 +24,8 @@ body:
     id: thoughts
     attributes:
       label: New Feature Feedback?
-      description: What are your thoughts on the new features released in pre-release?
-      placeholder: any thoughts on the new feature are welcome
+      description: Do you have any feedback on the new features released in the pre-release?
+      placeholder: Any thoughts on the new feature are welcome
     validations:
       required: false
   - type: markdown
