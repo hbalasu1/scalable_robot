@@ -27,9 +27,9 @@ body:
     attributes:
       label: Pre-release Feedback submission checklist
       description: |
-      By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/intel/intel-one-mono/blob/main/CODE_OF_CONDUCT.md)
-      Have a new feature you would like to see in OpenVINO? File a feature request <a href="https://github.com/openvinotoolkit/openvino/issues/new/choose">HERE</a>. 
-      You can also implement the feature by following the <a href="https://github.com/openvinotoolkit/openvino/blob/master/CONTRIBUTING.md">CONTRIBUTING.MD</a>
+        By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/intel/intel-one-mono/blob/main/CODE_OF_CONDUCT.md)
+        Have a new feature you would like to see in OpenVINO? File a feature request <a href="https://github.com/openvinotoolkit/openvino/issues/new/choose">HERE</a>. 
+        You can also implement the feature by following the <a href="https://github.com/openvinotoolkit/openvino/blob/master/CONTRIBUTING.md">CONTRIBUTING.MD</a>
       options:
         - label: Have a new feature you would like to see in OpenVINO? File a feature request <a href="https://github.com/openvinotoolkit/openvino/issues/new/choose">HERE</a>. You can also implement the feature by following the <a href="https://github.com/openvinotoolkit/openvino/blob/master/CONTRIBUTING.md">CONTRIBUTING.MD</a>
           required: true
