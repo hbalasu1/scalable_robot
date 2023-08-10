@@ -44,7 +44,7 @@ body:
         - CPU
         - iGPU
         - dGPU
-        - VPU
+        - NPU
     validations:
       required: false
   - type: dropdown
@@ -76,9 +76,12 @@ body:
       label: Hardware Architecture 
       description: What is your hardware architecture used in this test?
       options:
-        - Intel
-        - ARM
-        - Other
+        - x86 (64 bits)
+        - x86 (32 bits)
+        - ARM (64 bits)
+        - ARM (32 bits)
+        - RISC-V
+        - Other (please specified in the description)
     validations:
       required: true
   - type: input
@@ -99,7 +102,7 @@ body:
         - 'No'
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: target_platform
     attributes:
       label: Target Platform
