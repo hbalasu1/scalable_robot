@@ -22,7 +22,9 @@ body:
     attributes:
       label: Target Platform
       description: The platform that the OpenVINO source is built on
-      placeholder: 11th Gen Intel Core i7-1185G7
+      placeholder: You can also provide us full system log with the following command |
+          Windows cmd     - "systeminfo" |
+          Linux terminal  - "lscpu" and "lscpu -e"
     validations:
       required: false
   - type: dropdown
